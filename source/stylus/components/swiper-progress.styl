@@ -1,0 +1,111 @@
+.bullet-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 15px 0
+  +above($breakpoints.sm)
+    display: none
+  &--left
+    justify-content start
+  &--right
+    justify-content flex-end
+
+  .swiper-pagination-bullet
+    background-color $color-bullet
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    opacity: 1
+    position relative
+  .swiper-pagination-bullet-active
+    transform: scale(1.3)
+    transition transform 0.3s
+    background-color: $color-bullet-active
+
+.about-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  gap: 0px
+  margin 15px 0 15px
+  +above($breakpoints.sm)
+    margin 25px 0 15px
+    gap: 15px
+  +above($breakpoints.md)
+    margin 35px 0 15px
+    gap: 18px
+  +above($breakpoints.xxl)
+    gap: 21px
+    margin 40px 0 15px
+  .swiper-pagination-bullet
+    background-color $color-bullet
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    opacity: 1
+    position relative
+    +above($breakpoints.sm)
+      width: 9px
+      height: 9px
+    +above($breakpoints.md)
+      width: 11px
+      height: 11px
+    +above($breakpoints.xxl)
+      width: 12px
+      height: 12px
+  .swiper-pagination-bullet-active
+    transform: scale(1.3)
+    transition transform 0.3s
+    background-color: $color-bullet-active
+
+.city-pagination
+  display: flex
+  flex-direction: row
+  justify-content center
+  align-items: center
+  margin 15px 0
+  +above($breakpoints.sm)
+    display: none
+
+  .swiper-pagination-bullet
+    background-color $color-bullet
+    width: 8px
+    height: 8px
+    border-radius: 50%
+    opacity: 1
+    position relative
+  .swiper-pagination-bullet-active
+    transform: scale(1.3)
+    transition transform 0.3s
+    background-color: $color-bullet-active
+
+.button-next,
+.button-prev
+  display: none
+  +above($breakpoints.sm)
+    display: block
+    position absolute
+    z-index 1
+    background-color transparent
+    img
+      +above($breakpoints.sm)
+        border-radius: 50%
+        width 30px
+        height: 30px
+      +above($breakpoints.md)
+        width 35px
+        height: 35px
+      +above($breakpoints.xxl)
+        width 40px
+        height: 40px
+
+.button-prev
+  top: 50%
+  left: 0
+  transform: translate(-50%, -50%)
+
+.button-next
+  top: 50%
+  right: 0
+  transform: translate(50%, -50%)

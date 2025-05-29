@@ -1,0 +1,35 @@
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="description" content="Начните бизнес в трендовой нише открыв глэмпинг по франшизе «ВДАЛЬ» и зарабатывайте от 391 000 ₽ ежемесячно")
+    meta(name="HandheldFriendly" content="True")
+    meta(name="MobileOptimized" content="width")
+
+    link(rel="icon" href="favicon.ico" type="image/x-icon")
+
+    link(rel="stylesheet", href="css/vendor.css")
+    link(rel="stylesheet", href="css/reset.css")
+    link(rel="stylesheet", href="css/main.css")
+
+    block head
+      title «ВДАЛЬ» - Франшиза глэмпинга
+
+  body
+    block body
+    include ../components/privacy
+    include ../components/modal-form-call-me
+    include ../components/modal-form-agreement
+    include ../components/modal-form-format
+
+    //- include ../components/modal-form-investments
+    //- include ../components/modal-form-plan
+    //- include ../components/modal-form-city
+
+    block scripts
+      script(src="js/vendor.js")
+      script(src="js/validation.js")
+      script(src="js/feedback.js")
+      script(src="js/app.js")

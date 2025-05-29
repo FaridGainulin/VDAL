@@ -1,0 +1,53 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-w-i-regular.font-s-52
+        | Высокая рентабельность — 
+        br.no-br
+        | один из ключевых показателей 
+        br.no-br
+        | нашего бизнеса
+      .finances-section__block
+        .finances-section__swiper-wrapper
+          .swiper-bullet
+            .finances-section__cards.swiper-wrapper
+              .finances-section__card.brad-20.swiper-slide
+                .font-w-i-regular.font-s-42-a.color-gold с 1-го месяца
+                .font-s-20 вы начнете <br> зарабатывать
+              .finances-section__card.brad-20.swiper-slide
+                .font-w-i-regular.font-s-42-a.color-gold 67,6%
+                .font-s-20 рентабельность <br> по чистой прибыли
+              .finances-section__card.brad-20.swiper-slide
+                .font-w-i-regular.font-s-42-a.color-gold 2 месяца
+                .font-s-20 для запуска <br> всех процессов
+              .finances-section__card.brad-20.swiper-slide
+                .font-w-i-regular.font-s-42-a.color-gold от 578 000 ₽
+                .font-s-20 ежемесячная <br> выручка
+              .finances-section__card.brad-20.swiper-slide
+                .font-w-i-regular.font-s-42-a.color-gold от 3,8 млн ₽
+                .font-s-20 потребуется <br> для старта
+              .finances-section__card.brad-20.swiper-slide
+                .font-w-i-regular.font-s-42-a.color-gold от 391 000 ₽
+                .font-s-20 ежемесячная <br> чистая прибыль
+            .bullet-pagination
+        .finances-section__bottom.brad-20
+          .font-w-i-regular.font-s-32-a
+            | Узнайте, что 
+            br.no-br
+            | будет входить 
+            br.no-br
+            | в ваши стартовые 
+            br.no-br
+            | инвестиции
+          .finances-section__bottom-text.font-s-22
+            | Скачайте финансовую
+            br
+            | модель франшизы
+          form(data-feedback-form)
+            .finances-section__form
+              input(type="text" name="honeyfield" class="honeypot" style="display:none")
+              input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+              input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+              button.btn.btn--gold(type="submit") Скачать
+              .finances-section__agree-wrapper
+                include ../components/agree.pug

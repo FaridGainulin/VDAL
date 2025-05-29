@@ -1,0 +1,105 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center
+  background-color #FFFBF6
+
+  &__container
+    position relative
+    z-index 1
+    text-align: center
+    padding 25px 0
+    +above($breakpoints.sm)
+      padding 40px 0 30px
+    +above($breakpoints.md)
+      padding 70px 0 50px
+    +above($breakpoints.xxl)
+      padding 83px 0 63px
+
+  &__title
+    padding-bottom 15px
+    +above($breakpoints.sm)
+      padding-bottom 18px
+    +above($breakpoints.md)
+      padding-bottom 20px
+    +above($breakpoints.xxl)
+      padding-bottom 23px
+
+  &__sub-title
+    position relative
+    color: $color-white
+    &:after
+      content: ""
+      position: absolute
+      z-index -1
+      background-color $color-gold
+      border-radius: 30px
+      width: 109%;
+      height: 121%;
+      top: -6%;
+      left: 50%;
+      transform: translateX(-50%)
+
+  &__text
+    padding 10px 0 15px
+    +above($breakpoints.sm)
+      padding 11px 0 20px
+    +above($breakpoints.md)
+      padding 12px 0 25px
+    +above($breakpoints.xxl)
+      padding 13px 0 30px
+
+  &__form
+    width 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    margin 15px 0 8px
+    +above($breakpoints.sm)
+      flex-direction: row
+      justify-content center
+      gap: 12px
+      margin 20px 0 12px
+    +above($breakpoints.md)
+      gap: 16px
+      margin 25px 0 16px
+    +above($breakpoints.xxl)
+      gap: 20px
+      margin 30px 0 20px
+    & > *
+      width 280px !important
+      +above($breakpoints.sm)
+        width 220px !important
+      +above($breakpoints.md)
+        width 260px !important
+      +above($breakpoints.xxl)
+        width 300px !important
+
+  &__agree-wrapper
+    display: flex
+    justify-content center
+    margin-bottom 20px
+    +above($breakpoints.sm)
+      margin-bottom 30px
+    +above($breakpoints.md)
+      margin-bottom 45px
+    +above($breakpoints.xxl)
+      margin-bottom 60px
+
+  &__agree-wrapper .agree__text
+    +above($breakpoints.sm)
+      display: block
+
+  &__swiper-wrapper
+    position relative
+
+  &__card
+    width 280px !important
+    +above($breakpoints.sm)
+      width 100% !important
+
+  &__img
+    width 100%
+    height: auto

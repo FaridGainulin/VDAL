@@ -1,0 +1,34 @@
+section.city-section
+  .wrapper
+    .city-section__container
+      h2.city-section__title.font-w-i-regular.font-s-52 Станьте частью команды «ВДАЛЬ»
+      span.city-section__sub-title.font-w-semi-bold.font-s-32 и зарабатывайте от 4,7 млн
+      .city-section__text.font-s-32 чистой прибыли в год
+      .font-s-22 Проверьте, свободен ли ваш город для работы с нами
+      form(data-feedback-form)
+        .city-section__form
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn(type="submit") Проверить
+        .city-section__agree-wrapper
+          include ../components/agree.pug
+      .city-section__swiper-wrapper
+        .swiper-city
+          .city-section__cards.swiper-wrapper
+            .city-section__card.swiper-slide
+              img.city-section__img.brad-20(src="images/city-section-img-1.jpg" loading="lazy" width="1180" height="440" alt="image")
+            .city-section__card.swiper-slide
+              img.city-section__img.brad-20(src="images/city-section-img-2.jpg" loading="lazy" width="1180" height="440" alt="image")
+            .city-section__card.swiper-slide
+              img.city-section__img.brad-20(src="images/city-section-img-3.jpg" loading="lazy" width="1180" height="440" alt="image")
+            .city-section__card.swiper-slide
+              img.city-section__img.brad-20(src="images/city-section-img-4.jpg" loading="lazy" width="1180" height="440" alt="image")
+            .city-section__card.swiper-slide
+              img.city-section__img.brad-20(src="images/city-section-img-5.jpg" loading="lazy" width="1180" height="440" alt="image")
+          .city-pagination
+        button.button-prev(aria-label="prev")
+          img.button-prev-img(src="images/button-prev.svg" loading="lazy" width="40" height="40" alt="previous")
+        button.button-next(aria-label="next")
+          img.button-next-img(src="images/button-next.svg" loading="lazy" width="40" height="40" alt="next")
+  include ../components/footer.pug

@@ -1,0 +1,78 @@
+.footer
+
+  &__container
+    display: flex
+    align-items: center
+    flex-direction: column-reverse
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-start
+      justify-content space-between
+
+  &__brand,
+  &__call-me
+    +above($breakpoints.sm)
+      margin-top 15px
+    +above($breakpoints.md)
+      margin-top 20px
+    +above($breakpoints.xxl)
+      margin-top 22px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+      flex-basis: 35%
+
+  &__logo-wrapper
+    display: flex
+    justify-content center
+    align-items: center
+    background-color $color-white
+    border: 3px solid $color-gold
+    border-bottom: none
+    border-radius: 10px 10px 0 0
+    width 80px
+    height: 80px
+    +above($breakpoints.sm)
+      width 90px
+      height: 90px
+    +above($breakpoints.md)
+      width 100px
+      height: 100px
+    +above($breakpoints.xxl)
+      width 121px
+      height: 119px
+
+  &__logo
+    width 60px
+    height: 56px
+    +above($breakpoints.sm)
+      width 65px
+      height: 58px
+    +above($breakpoints.md)
+      width 70px
+      height: 60px
+    +above($breakpoints.xxl)
+      width 88px
+      height: 77px
+
+  &__call-me
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 10px
+    +above($breakpoints.sm)
+      flex-basis: 35%
+      align-items: flex-end
+      gap: 4px
+    +above($breakpoints.md)
+      gap: 5px
+    +above($breakpoints.xxl)
+      gap: 6px
+
+  &__privacy
+    cursor pointer
+    text-decoration: underline
+    color: $color-gold

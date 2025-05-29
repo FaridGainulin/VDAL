@@ -1,0 +1,24 @@
+section.main-section
+  include ../components/header.pug
+  .wrapper
+    .main-section__container
+      h1.main-section__title.font-w-i-regular.font-s-52
+        | Начните бизнес
+        br
+        | в трендовой нише
+      .main-section__sub-title.font-s-32
+        | Откройте глэмпинг по франшизе
+        br
+        span.font-w-semi-bold «ВДАЛЬ» и зарабатывайте
+      .main-section__text
+        span.font-w-semi-bold.font-s-32-a от 391 000 ₽ ежемесячно
+      .main-section__desc.font-s-22 Узнайте, как стать партнером сети
+      form(data-feedback-form)
+        .main-section__form
+          input(type="text" name="honeyfield" class="honeypot" style="display:none")
+          input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.btn--main(type="submit") Получите образец <br> партнерского договора
+          .main-section__agree-wrapper
+            include ../components/agree.pug
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="1920" height="898" alt="image")

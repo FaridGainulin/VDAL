@@ -1,0 +1,130 @@
+section.start-section
+  .wrapper
+    .start-section__container
+      img.start-section__img(src="images/start-section-img.png" loading="lazy" width="1285" height="667" alt="image")
+      h2.start-section__title.font-w-i-regular.font-s-52
+        | У нас есть простой алгоритм 
+        br.no-br
+        | открытия глэмпинга
+      .font-s-32 и мы легко запустим ваш бизнес в любом городе России
+      .start-section__sub-title.font-s-22 Как мы поможем вам на старте:
+      .swiper-bullet
+        .start-section__cards.swiper-wrapper
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 01/
+            .font-s-18-a
+              | Поможем собрать 
+              span.font-w-semi-bold
+                | сильную 
+                br
+                | команду профессионалов
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 02/
+            .font-s-18-a
+              | Дадим рекомендации 
+              br.no-br
+              span.font-w-semi-bold по выбору локации и помещения
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 03/
+            .font-s-18-a
+              | Проведем для вас и вашей команды 
+              br.no-br
+              span.font-w-semi-bold подробное онлайн-обучение
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 04/
+            .font-s-18-a
+              | Поможем правильно 
+              br.no-br
+              span.font-w-semi-bold оформить глэмпинг в стиле сети
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 05/
+            .font-s-18-a
+              | Передадим стандарты оказания 
+              br.no-br
+              | услуг и 
+              span.font-w-semi-bold взаимодействия с клиентами
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 06/
+            .font-s-18-a
+              | Предоставим руководство 
+              span.font-w-semi-bold
+                | по 
+                br.no-br
+                | использованию фирменного стиля
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 07/
+            .font-s-18-a
+              | Дадим рекомендации по выбору 
+              br.no-br
+              span.font-w-semi-bold вариантов некапитальных строений
+          .start-section__card.swiper-slide.start-section__card-position
+            .font-w-semi-bold.font-s-20.color-gold 08/
+            .font-s-18-a
+              | Поделимся рабочими 
+              br
+              span.font-w-semi-bold маркетинговыми инструментами
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 09/
+            .font-s-18-a
+              | Предоставим перечень 
+              br
+              span.font-w-semi-bold необходимого инвентаря
+          .start-section__card.swiper-slide.start-section__card-position
+            .font-w-semi-bold.font-s-20.color-gold 10/
+            .font-s-18-a
+              | Поможем настроить 
+              br
+              span.font-w-semi-bold работу социальных сетей
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 11/
+            .font-s-18-a
+              | Предоставим списки проверенных 
+              br.no-br
+              span.font-w-semi-bold поставщиков оборудования и пр.
+          .start-section__card.swiper-slide.start-section__card-position
+            .font-w-semi-bold.font-s-20.color-gold 12/
+            .font-s-18-a
+              | Дадим рекомендации по увеличению 
+              br.no-br
+              span.font-w-semi-bold среднего чека и объема продаж
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 13/
+            .font-s-18-a
+              | Дадим рекомендации по 
+              br.no-br
+              span.font-w-semi-bold
+                | ценообразованию 
+                br.no-br
+                | для вашего города
+          .start-section__card.swiper-slide.start-section__card-position
+            .font-w-semi-bold.font-s-20.color-gold 14/
+            .font-s-18-a
+              | Поможем организовать 
+              br
+              span.font-w-semi-bold работу бухгалтерии
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 15/
+            .font-s-18-a
+              | Подключим к общему 
+              br
+              span.font-w-semi-bold программному обеспечению
+          .start-section__card.swiper-slide
+            .font-w-semi-bold.font-s-20.color-gold 16/
+            .font-s-18-a
+              | Добавим в закрытое 
+              br
+              span.font-w-semi-bold сообщество партнеров сети
+        .bullet-pagination
+      .start-section__bottom
+        .font-w-i-regular.font-s-32-a
+          | Получите подробный план
+          br
+          | запуска глэмпинга в 1 клик
+        form(data-feedback-form)
+          .start-section__form
+            input(type="text" name="honeyfield" class="honeypot" style="display:none")
+            input.input(type="text" name="name" autocomplete="off" placeholder="Имя")
+            input.input(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+            button.btn(type="submit") Получить
+          .start-section__agree-wrapper
+            include ../components/agree.pug
